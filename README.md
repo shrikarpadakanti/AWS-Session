@@ -68,8 +68,8 @@ npm install
 npm run start
 ```
 
-> NOTE - We will have to edit the **inbound rules** in the security group of our EC2, in order to allow traffic from our particular port
+> NOTE - We will have to edit the **inbound rules** in the security group of our EC2, in order to allow traffic from our particular port.
 > Add Custom TCP: 3000 and allow from anywhere.
-> Now go to <Public-IP(of-Ubuntu)>:3000
+> Now go to <Public-IP_Address>:3000
 
 ### Project is deployed on AWS 🎉
