@@ -15,6 +15,7 @@ STATIC_DIR="./client"
 PUBLISHABLE_KEY=""
 SECRET_KEY=""
 ```
+> Note: PUBLISHABLE_KEY and SECRET_KEY needs to be copied from Stripe, If you don't have any leave them empty!
 3. Initialise and start the project
 ```
 npm install
@@ -29,7 +30,7 @@ npm run start
 2. Create an EC2 instance
     - Select an OS image - Ubuntu
     - Create a new key pair & download `.pem` file
-    - Instance type - t2.micro
+    - Instance type - t3.micro
 3. Connecting to the instance using ssh
 ```
 ssh -i instance.pem ubunutu@<IP_ADDRESS>
@@ -68,5 +69,7 @@ npm run start
 ```
 
 > NOTE - We will have to edit the **inbound rules** in the security group of our EC2, in order to allow traffic from our particular port
+> Add Custom TCP: 3000 and allow from anywhere.
+> Now go to <Public-IP(of-Ubuntu)>:3000
 
 ### Project is deployed on AWS 🎉
